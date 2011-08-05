@@ -3,6 +3,27 @@ mono = Consolas, 'Lucida Console', Monaco, Courier New, monospace
 sans = 'Helvetica Neue', Arial, Helvetica, sans-serif
 lucida = 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif 
 
+.button
+  display: block
+  text-shadow: #000 0 1px 0
+  background linear-gradient(top, rgba(120,120,120,.9), rgba(40,40,40,.9) 50%, rgba(0,0,0,.9) 50%, rgba(0,0,0,.9) 55%, rgba(70,70,70,.9))
+  border: 1px solid rgba(0,0,0,.5)
+  border-radius: 5px
+  box-shadow: rgba(255,255,255,.4) 0 0 2px
+
+  &.download
+    font: 16px/40px Arial
+    padding: 0 30px
+
+  &.small
+    float: right
+    margin: 20px
+    font: 14px/30px Arial
+    padding: 0 20px
+
+  &:hover
+    background linear-gradient(top, rgba(120,240,120,.9), rgba(0,120,0,.9) 55%, rgba(70,140,70,.9))
+
 span.amp
   font-family Baskerville,Palatino,"Book Antiqua",serif
   font-style italic
