@@ -28,24 +28,29 @@ body{font-size:14px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica
 body .cnt{width:960px;margin:0 auto;zoom:1}
 body .cnt:before,body .cnt:after{content:"";display:table}
 body .cnt:after{clear:both}
-strong{font-weight:bold}
-em{font-style:italic}
-.nav.main{height:48px;-webkit-box-shadow:rgba(0,0,0,0.15) 0 0 25px;-moz-box-shadow:rgba(0,0,0,0.15) 0 0 25px;box-shadow:rgba(0,0,0,0.15) 0 0 25px}
-.nav.main ul{height:48px}
+body strong{font-weight:bold}
+body em{font-style:italic}
+body h1,body h2,body h3,body h4,body h5,body h6{-webkit-font-smoothing:antialiased}
+.nav.main{height:48px;-webkit-box-shadow:rgba(0,0,0,0.15) 0 0 25px;-moz-box-shadow:rgba(0,0,0,0.15) 0 0 25px;box-shadow:rgba(0,0,0,0.15) 0 0 25px;}
 .nav.main.top{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.4)), color-stop(0.9, transparent));background:-webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%, transparent 90%);background:-moz-linear-gradient(top, rgba(255,255,255,0.4) 0%, transparent 90%);background:linear-gradient(top, rgba(255,255,255,0.4) 0%, transparent 90%);border-bottom:1px solid #a03c3c}
 .nav.main.bot{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.3)), color-stop(1, transparent));background:-webkit-linear-gradient(top, rgba(255,255,255,0.3) 0%, transparent 100%);background:-moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, transparent 100%);background:linear-gradient(top, rgba(255,255,255,0.3) 0%, transparent 100%);border-bottom:1px solid #4b0000}
-.nav.main li{float:left}
-.nav.main a{display:block;line-height:48px;padding:0 17px;border:1px solid transparent;border-top:none;border-bottom:none}
-.nav.main a:hover{border-color:rgba(255,255,255,0.2);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.2)), color-stop(1, rgba(255,255,255,0.1)));background:-webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);background:-moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);background:linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%)}
-.nav.main li.i18n{margin:12px 0;float:right}
-.nav.main li.i18n form{padding:0;-webkit-box-shadow:rgba(255,255,255,0.15) 0 0 15px;-moz-box-shadow:rgba(255,255,255,0.15) 0 0 15px;box-shadow:rgba(255,255,255,0.15) 0 0 15px}
-#header{position:relative;height:380px;margin:0 auto 40px}
-#header h1.logo a{display:block;float:left;margin:30px 0 0 -40px;height:179px;width:500px;text-indent:-9999em;background:url("../i/logo.png") no-repeat}
-#header p.subtitle{float:left;font:18px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;margin-left:40px;width:500px}
-#header .nav{float:left;clear:left;margin:30px 0 0 40px}
-#header .nav li{float:left;margin-right:15px}
-#header .nav .learn{display:block;font:16px/44px "Helvetica Neue",Arial,Helvetica,sans-serif;padding:0 20px;background:rgba(0,0,0,0.15);-webkit-transition:all .15s ease;-moz-transition:all .15s ease;transition:all .15s ease;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
-#header .nav .learn:hover{background:rgba(0,0,0,0.2)}
+.nav.main ul{zoom:1;}
+.nav.main ul:before,.nav.main ul:after{content:"";display:table}
+.nav.main ul:after{clear:both}
+.nav.main ul li{float:left;}
+.nav.main ul li a{display:block;line-height:48px;padding:0 17px;border:1px solid transparent;border-top:none;border-bottom:none;}
+.nav.main ul li a:hover{border-color:rgba(255,255,255,0.2);background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.2)), color-stop(1, rgba(255,255,255,0.1)));background:-webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);background:-moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);background:linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%)}
+.nav.main ul li.i18n{margin:12px 0;float:right;}
+.nav.main ul li.i18n form select{padding:0;-webkit-box-shadow:rgba(255,255,255,0.15) 0 0 15px;-moz-box-shadow:rgba(255,255,255,0.15) 0 0 15px;box-shadow:rgba(255,255,255,0.15) 0 0 15px}
+#header{position:relative;zoom:1;margin-bottom:56px;}
+#header:before,#header:after{content:"";display:table}
+#header:after{clear:both}
+#header h1.logo a{display:block;margin:30px 0 0 -40px;height:179px;width:500px;text-indent:-9999em;background:url("../i/logo.png") no-repeat}
+#header p.subtitle{font:18px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif;margin-left:40px;width:500px}
+#header .nav{clear:left;margin:30px 0 0 40px;}
+#header .nav li{float:left;margin-right:15px;}
+#header .nav li .learn{display:block;font:16px/44px "Helvetica Neue",Arial,Helvetica,sans-serif;padding:0 20px;background:rgba(0,0,0,0.15);-webkit-transition:all .15s ease;-moz-transition:all .15s ease;transition:all .15s ease;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+#header .nav li .learn:hover{background:rgba(0,0,0,0.2)}
 #code{position:absolute;top:50px;right:0;color:#fff;padding:40px 0 0;width:370px;height:310px;border:5px solid #a54646;background:-webkit-gradient(radial,center center,0,center center,360,from(rgba(0,0,0,0.5)),to(rgba(0,0,0,0.7)));background:-moz-radial-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7));-webkit-border-radius:175px 0 175px 0;-moz-border-radius:175px 0 175px 0;border-radius:175px 0 175px 0;-webkit-box-shadow:rgba(255,255,255,0.15) 0 0 100px;-moz-box-shadow:rgba(255,255,255,0.15) 0 0 100px;box-shadow:rgba(255,255,255,0.15) 0 0 100px;}
 #code div{display:block;font:14px/15px Consolas,"Lucida Console",Monaco,Courier New,monospace;padding:0 0 0 90px;text-shadow:none}
 #code .keyword{color:#f9bb00}
@@ -62,7 +67,7 @@ ul#posts{width:546px;float:left;position:relative;background:rgba(0,0,0,0.15);ma
 #posts li{clear:both;margin:20px 0 0}
 #posts li.abbr.post a{display:block;min-h:40px;margin:0 10px 10px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px}
 #posts li.abbr.post a:hover{background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.2)), color-stop(0.5, rgba(255,255,255,0.03)), color-stop(0.5, transparent), color-stop(1, rgba(255,255,255,0.1)));background:-webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.03) 50%, transparent 50%, rgba(255,255,255,0.1) 100%);background:-moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.03) 50%, transparent 50%, rgba(255,255,255,0.1) 100%);background:linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.03) 50%, transparent 50%, rgba(255,255,255,0.1) 100%);-webkit-box-shadow:rgba(0,0,0,0.25) 0 0 5px;-moz-box-shadow:rgba(0,0,0,0.25) 0 0 5px;box-shadow:rgba(0,0,0,0.25) 0 0 5px}
-#posts li h3 a,#posts li.abbr .title{display:block;font:bold 24px/1 "Helvetica Neue",Arial,Helvetica,sans-serif;padding:10px 0 0}
+#posts li h3 a,#posts li.abbr .title{display:block;font:bold 24px/1 "Helvetica Neue",Arial,Helvetica,sans-serif;padding:10px 0 0;-webkit-font-smoothing:antialiased}
 #posts li.abbr .title{font-size:14px;line-height:20px}
 #posts li p,#posts li.abbr .author{display:block;font-weight:normal;padding:0 40px 20px 80px}
 #posts li .author{font-size:12px;line-height:20px;color:#be6e6e;text-shadow:none}
@@ -88,12 +93,12 @@ ul#posts{width:546px;float:left;position:relative;background:rgba(0,0,0,0.15);ma
 .projects{width:960px}
 .nav.panels .panel.small,.squares a{display:block;position:relative;overflow:hidden;width:171px;padding:2px;float:left;background:rgba(0,0,0,0.15);-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
 .participate .squares a{height:171px;margin:0 0 20px}
-.squares.projects a{width:178px;height:278px}
-.squares a:hover:after{display:block;position:absolute;z-index:0;left:-60px;bottom:-30px;content:"\2192";font-size:200px;line-height:1;color:rgba(255,255,255,0.1);text-shadow:none}
+.squares.projects a{width:178px;height:290px;}
+.squares.projects a:hover:after{display:block;position:absolute;bottom:-30px;left:-60px;z-index:0;content:"\2192";font-size:200px;line-height:1;color:rgba(255,255,255,0.1);text-shadow:none}
 .panel.small h4,.squares .title{display:block;padding:6px 10px 0;font:bold 14px/30px "Helvetica Neue",Arial,Helvetica,sans-serif;border-bottom:1px solid #500000;background:-webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.2)), color-stop(0.6, rgba(255,255,255,0)), color-stop(1, transparent));background:-webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%, transparent 100%);background:-moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%, transparent 100%);background:linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%, transparent 100%);-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;-webkit-transition:all .1s ease;-moz-transition:all .1s ease;transition:all .1s ease}
 .projects li .title{font-size:16px;padding-top:8px}
 .squares li .description{position:relative;z-index:1;display:block;border-top:1px solid rgba(255,255,255,0.1);padding:6px 10px;font-weight:normal;-webkit-transition:all .1s ease;-moz-transition:all .1s ease;transition:all .1s ease}
-#projects-cnt{overflow:hidden;margin:0 auto 40px}
+#projects-cnt{overflow:hidden;margin:0 auto 40px;}
 #projects-cnt h2{text-align:center;font:bold 36px/70px "Helvetica Neue",Arial,Helvetica,sans-serif;letter-spacing:-1px;border-bottom:2px solid rgba(0,0,0,0.2)}
-.projects{padding:20px 0 0;border-top:2px solid rgba(255,255,255,0.2)}
+#projects-cnt .projects{padding:20px 0 0;border-top:2px solid rgba(255,255,255,0.2)}
 #bottom{font-size:12px;background:rgba(0,0,0,0.15);padding:20px 0 40px;border-top:1px solid rgba(255,255,255,0.1)}

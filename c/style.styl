@@ -30,89 +30,78 @@ body
   .cnt
     cnt()
 
-strong
-  fw bold
+  strong
+    fw bold
 
-em
-  font-style italic
+  em
+    font-style italic
+  h1, h2, h3, h4, h5, h6
+    aa()
 
 .nav.main
   h 48px
   box-shadow rgba(0,0,0,.15) 0 0 25px
+  &.top
+    background linear-gradient(top, w40, transparent 90%)
+    bb 1px solid rgb(160,60,60)
 
-.nav.main ul
-  h 48px
-
-.nav.main.top
-  background linear-gradient(top, w40, transparent 90%)
-  bb 1px solid rgb(160,60,60)
-
-.nav.main.bot
-  background linear-gradient(top, w30, transparent)
-  bb 1px solid rgb(75,0,0)
-
-.nav.main li
-  float left
-
-.nav.main a
-  d block
-  lh 48px
-  p 0 17px
-  b 1px solid transparent
-  bt none
-  bb none
-
-.nav.main a:hover
-  bc w20
-  background linear-gradient(top, w20, w10)
-
-.nav.main li.i18n
-  m 12px 0
-  float right
-
-.nav.main li.i18n form
-  p 0
-  box-shadow w15 0 0 15px
+  &.bot
+    background linear-gradient(top, w30, transparent)
+    bb 1px solid rgb(75,0,0)
+  ul
+    clearfix()
+    li
+      float left
+      a
+        d block
+        lh 48px
+        p 0 17px
+        b 1px solid transparent
+        bt none
+        bb none
+        &:hover
+          bc w20
+          background linear-gradient(top, w20, w10)
+      &.i18n
+        m 12px 0
+        float right
+        form select
+          p 0
+          box-shadow w15 0 0 15px
 
 #header
   position relative
-  h 380px
-  m 0 auto 40px
+  clearfix()
+  mb 56px
 
-#header h1.logo a
-  d block
-  float left
-  m 30px 0 0 -40px
-  h 179px
-  w 500px
-  ti -9999em
-  bg url(../i/logo.png) no-repeat
+  h1.logo a
+    d block
+    m 30px 0 0 -40px
+    h 179px
+    w 500px
+    ti -9999em
+    bg url(../i/logo.png) no-repeat
 
-#header p.subtitle
-  float left
-  f 18px/1.5 sans
-  ml 40px
-  w 500px
+  p.subtitle
+    f 18px/1.5 sans
+    ml 40px
+    w 500px
 
-#header .nav
-  float left
-  clear left
-  m 30px 0 0 40px
-
-#header .nav li
-  float left
-  mr 15px
-
-#header .nav .learn
-  d block
-  f 16px/44px sans
-  p 0 20px
-  bg b15
-  transition all .15s ease
-  border-radius 5px
-
-#header .nav .learn:hover
-  bg b20
+  .nav
+    clear left
+    m 30px 0 0 40px
+    li
+      float left
+      mr 15px
+      .learn
+        d block
+        f 16px/44px sans
+        p 0 20px
+        bg b15
+        transition all .15s ease
+        border-radius 5px
+        &:hover
+          bg b20
 
 #code
   absolute top 50px right 0
@@ -193,6 +182,7 @@ ul#posts
   d block
   f bold 24px/1 sans
   p 10px 0 0
+  aa()
 
 #posts li.abbr .title
   s 14px
@@ -311,19 +301,17 @@ ul#posts
 
 .squares.projects a
   w 178px
-  h 278px
+  h 290px
 
-.squares a:hover:after
-  d block
-  position absolute
-  z-index 0
-  left -60px
-  bottom -30px
-  content "\2192"
-  s 200px
-  lh 1
-  color w10
-  text-shadow none
+  &:hover:after
+    d block
+    absolute bottom -30px left -60px
+    z 0
+    content "\2192"
+    s 200px
+    lh 1
+    color w10
+    text-shadow none
 
 .panel.small h4, .squares .title
   d block
@@ -351,15 +339,15 @@ ul#posts
   overflow hidden
   m 0 auto 40px
 
-#projects-cnt h2
-  ta center
-  f bold 36px/70px sans
-  ls -1px
-  bb 2px solid b20
+  h2
+    ta center
+    f bold 36px/70px sans
+    ls -1px
+    bb 2px solid b20
 
-.projects
-  p 20px 0 0
-  bt 2px solid w20
+  .projects
+    p 20px 0 0
+    bt 2px solid w20
 
 #bottom
   s 12px
